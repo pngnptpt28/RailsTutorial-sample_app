@@ -9,10 +9,10 @@ class UsersController < ApplicationController
     # debugger
   end
   
-   def create
+  def create
     @user = User.new(user_params)
-    if @user.save #保存したとき
-      #1度目だけ表示:flash(成功=success)
+    if @user.save
+      log_in @user
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
     else
