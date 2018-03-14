@@ -32,7 +32,8 @@ Rails.application.configure do
   # config.action_mailer.perform_caching = false
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.delivery_method = :test
-  host = 'rails-tutorial-mhartl.c9users.io'     # クラウドIDE
+  
+  host = '911272cf9b4a4ab4af72cfdbdfad380f.vfs.cloud9.us-east-2.amazonaws.com/'
   config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   # Print deprecation notices to the Rails logger.
